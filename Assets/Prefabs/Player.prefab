@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 4393506216082277949}
   - component: {fileID: 4393506216082277939}
   - component: {fileID: 4393506216082277938}
+  - component: {fileID: 1847070891067858633}
+  - component: {fileID: 8358546789073011914}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -282,3 +284,29 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3245a6694aa805e4dbe1d4f051f2880a, type: 3}
   - {fileID: 21300000, guid: 7b710f4cd56976f42b7276949f15510a, type: 3}
   - {fileID: 21300000, guid: 2af2cd5ebad06904c85d5d1f2281915c, type: 3}
+--- !u!114 &1847070891067858633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4393506216082277946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec730fcc01768814cb15ec0c97b61218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxNumberOfFruitsToStore: 50
+  currentNumberOfStoredFruits: 0
+--- !u!114 &8358546789073011914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4393506216082277946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019752f335ffa4f48a36a35a53e2bc37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

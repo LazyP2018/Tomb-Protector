@@ -15,7 +15,7 @@ public class BushFruits : MonoBehaviour
     private bool hasFruits;
     private float timer;
 
-    private void Awake()
+    private void Start()
     {
         bushVisual = GetComponent<BushVisual>();
 
