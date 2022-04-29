@@ -70,4 +70,13 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool(WALK_ANIMATION, false);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Bush"))
+        {
+            Debug.Log("The value of fruit is: " +
+                collision.gameObject.GetComponent<BushFruits>().HarvestFruit());
+        }
+    }
 }

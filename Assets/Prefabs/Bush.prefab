@@ -10,9 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7850588101906019050}
   - component: {fileID: 7949181822924560323}
+  - component: {fileID: 2467170185588726330}
+  - component: {fileID: 358578778}
+  - component: {fileID: 358578779}
   m_Layer: 0
   m_Name: Bush
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,6 +90,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2467170185588726330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460808156827063541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91287188d300a6b4c9cd56b6f12be8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bushSprites:
+  - {fileID: 21300000, guid: bccf5691ef79a944598ec9ad5f0c60e1, type: 3}
+  - {fileID: 21300000, guid: 8493037421bf9784e8a0b8d1e1ea2110, type: 3}
+  - {fileID: 21300000, guid: 5b3c5db921a055a44bcc0283a718b0f7, type: 3}
+  fruitSprites:
+  - {fileID: 21300000, guid: e8e4135bfdb53d74d8630bf50c2fcef5, type: 3}
+  - {fileID: 21300000, guid: 695bd11414e079c4181fa4c4d4b81fb3, type: 3}
+  - {fileID: 21300000, guid: 1bbea70228f6be0418ccb2226d58c319, type: 3}
+  drySprites:
+  - {fileID: 21300000, guid: 81db0a11d015cc042b383a534851b250, type: 3}
+  - {fileID: 21300000, guid: b5a7ea66a63050e47bbcba1c84994f53, type: 3}
+  - {fileID: 21300000, guid: 72c2a1845d96c6f4e9ea8cf4d6c07fc5, type: 3}
+  fruitsRenderers:
+  - {fileID: 1419206875878579211}
+  - {fileID: 8101885136155754271}
+  - {fileID: 8101885136155754271}
+  hideTimePerFruit: 0.2
+--- !u!114 &358578778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460808156827063541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7681eb311a526b40a1bb4eed4ba5f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountPerType: 0a000000070000000c000000
+  respawnTime:
+  - 4
+  - 5
+  - 6
+--- !u!61 &358578779
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460808156827063541}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.023316473, y: -0.019985557}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3671232, y: 0.36046147}
+  m_EdgeRadius: 0
 --- !u!1 &2396592723242290626
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +173,7 @@ GameObject:
   - component: {fileID: 3730294049781933080}
   - component: {fileID: 1419206875878579211}
   m_Layer: 0
-  m_Name: Fruit
+  m_Name: Fruit1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -266,7 +341,7 @@ GameObject:
   - component: {fileID: 6664476198760943306}
   - component: {fileID: 8101885136155754271}
   m_Layer: 0
-  m_Name: Fruit
+  m_Name: Fruit2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
