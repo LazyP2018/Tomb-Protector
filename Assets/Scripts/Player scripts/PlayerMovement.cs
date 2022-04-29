@@ -15,15 +15,15 @@ public class PlayerMovement : MonoBehaviour
     private GameObject artifact;
     private string MOVEMENT_AXIS_X = "Horizontal";
     private string MOVEMENT_AXIS_Y = "Vertical";
-    private string WALK_ANIMATION = "Walking";
+   // private string WALK_ANIMATION = "Walking";
+    public bool isMoving = false;
 
-    
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-        anim.SetBool(WALK_ANIMATION, false);
+        //anim.SetBool(WALK_ANIMATION, false);
     }
 
     private void Update()
@@ -31,14 +31,16 @@ public class PlayerMovement : MonoBehaviour
         if (Time.time > harvestTimer)
             isHarvesting = false;
         FlipSprite();
-        AnimatePlayer();
+        //AnimatePlayer();
     }
 
     private void FixedUpdate()
     {
+        IsMoving();
         if (isHarvesting)
         {
             myBody.velocity = Vector2.zero;
+            isMoving = false;
         }
         else
         {
@@ -72,17 +74,25 @@ public class PlayerMovement : MonoBehaviour
         return isHarvesting;
     }
 
-    private void AnimatePlayer()
+    private void IsMoving()
     {
-        if (Input.GetAxisRaw(MOVEMENT_AXIS_X) > 0 || Input.GetAxisRaw(MOVEMENT_AXIS_X) < 0 || Input.GetAxisRaw(MOVEMENT_AXIS_Y) > 0 || Input.GetAxisRaw(MOVEMENT_AXIS_Y) < 0)
-        {
-            anim.SetBool(WALK_ANIMATION, true);
-        }
+        if (Input.GetAxis(MOVEMENT_AXIS_X) != 0 || Input.GetAxis(MOVEMENT_AXIS_Y) != 0)
+            isMoving = true;
         else
-        {
-            anim.SetBool(WALK_ANIMATION, false);
-        }
+            isMoving = false;
     }
 
- 
+    //private void AnimatePlayer()
+    //{
+    //    if (Input.GetAxisRaw(MOVEMENT_AXIS_X) != 0 || Input.GetAxisRaw(MOVEMENT_AXIS_Y) != 0)
+    //    {
+    //        anim.SetBool(WALK_ANIMATION, true);
+    //    }
+    //    else
+    //    {
+    //        anim.SetBool(WALK_ANIMATION, false);
+    //    }
+    //}
+
+
 }
