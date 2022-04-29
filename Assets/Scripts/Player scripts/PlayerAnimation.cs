@@ -26,5 +26,9 @@ public class PlayerAnimation : MonoBehaviour
             state++;
             timer = Time.time + timeTreshold;
         }
+        else
+        {
+            sr.sprite = animSprites[0];
+        }
     }
 }

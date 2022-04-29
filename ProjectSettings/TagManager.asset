@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bush
   - Tomb
+  - Wolf
   layers:
   - Default
   - TransparentFX
@@ -51,4 +52,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 4198526181
+    locked: 0
+  - name: Wolf
+    uniqueID: 2863743539
     locked: 0
