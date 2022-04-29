@@ -58,4 +58,13 @@ public class PlayerHarvest : MonoBehaviour
             collidedBush = collision;
         }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Bush"))
+        {
+            canHarvestFruits = false;
+            collidedBush = null;
+        }
+    }
 }

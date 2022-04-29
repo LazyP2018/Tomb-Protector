@@ -117,7 +117,6 @@ MonoBehaviour:
   fruitsRenderers:
   - {fileID: 1419206875878579211}
   - {fileID: 8101885136155754271}
-  - {fileID: 8101885136155754271}
   hideTimePerFruit: 0.2
 --- !u!114 &358578778
 MonoBehaviour:
@@ -149,7 +148,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.023316473, y: -0.019985557}
+  m_Offset: {x: -0.01734054, y: -0.03523186}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -160,7 +159,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3671232, y: 0.36046147}
+  m_Size: {x: 0.14351058, y: 0.12668493}
   m_EdgeRadius: 0
 --- !u!1 &2396592723242290626
 GameObject:

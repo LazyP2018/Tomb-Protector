@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bush
+  - Tomb
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - Particle
   - 
   - 
   - 
@@ -44,6 +45,9 @@ TagManager:
     locked: 0
   - name: Bush
     uniqueID: 2789388015
+    locked: 0
+  - name: Tomb
+    uniqueID: 2343797481
     locked: 0
   - name: Player
     uniqueID: 4198526181
